@@ -1,3 +1,23 @@
 * {
     font-family: 'Lato', sans-serif;
 }
+
+html body {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+.nav-item {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background-color: #2E58A6;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #d1d1d1;
+    padding: 5px 15px;
+}
+
