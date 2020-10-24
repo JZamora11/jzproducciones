@@ -3,8 +3,18 @@
 }
 
 html body {
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+    background-color: #2E58A6;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+body::-webkit-scrollbar{
+    width: 11px;
+    background-color: #2E58A6;
+    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-circles.png");
+    border-radius: 8px;
 }
 
 .nav-item {
