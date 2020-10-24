@@ -1,4 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
@@ -31,3 +34,117 @@ body::-webkit-scrollbar-thumb{
     padding: 5px 15px;
 }
 
+.contacto1 {
+    width: 80%;
+    padding: 20px;
+}
+.contacto1 h2 {
+    width: 100%;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.contacto1 p {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.contacto1 .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.contacto1 .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.contacto1 .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+}
+.contacto1 .row100 .inputBox input,
+.contacto1 .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+.contacto1 .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.contacto1 .row100 .inputBox input:focus + .text,
+.contacto1 .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.contacto1 .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.contacto1 .row100 .inputBox input:focus ~ .line,
+.contacto1 .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+}
+.contacto1 .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+.contacto1 .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+.contacto1 .row100 .inputBox textarea:focus + .text,
+.contacto1 .row100 .inputBox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.contacto1 .row100 .inputBox textarea:focus ~ .line,
+.contacto1 .row100 .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    color: #2E58A6;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+}
