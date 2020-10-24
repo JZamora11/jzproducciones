@@ -6,6 +6,7 @@
 }
 
 html body {
+    overflow-x: hidden;
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
 }
@@ -34,9 +35,106 @@ body::-webkit-scrollbar-thumb{
     padding: 5px 15px;
 }
 
-.caja1 {
+.separador1 {
     width: 100%;
-    height: 1000px;
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/brilliant.png");
+    height: 130px;
+}
+.bienvenido {
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.soy {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 70px;
+}
+.botones .btn {
+    position: relative;
+    padding: 15px 20px;
+    margin: 0 15px;
+    color: #2E58A6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+.botones .btn:hover {
+    background: #2E58A6;
+    color: #fff;
+    box-shadow: 0 0 50px #2E58A6;
+    transition-delay: 0.1s;
+}
+.botones .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #2E58A6;
+    border-left: 2px solid #2E58A6;
+    transition: 0.5s;
+}
+.botones .btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.botones .btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #2E58A6;
+    border-right: 2px solid #2E58A6;
+    transition: 0.5s;
+}
+.botones .btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.botones .btn1 {
+    position: relative;
+    padding: 15px 20px;
+    margin: 0 15px;
+    border: 2px solid #2E58A6;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    color: #2E58A6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.5s;
+    vertical-align: middle;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+.botones .btn1:hover{
+    color: #fff;
+}
+.botones .btn1 span {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #2E58A6;
+    transition: width 0.5s, height 0.5s;
+    z-index: -1;
+}
+.botones .btn1:hover span {
+    width: 300px;
+    height: 300px;
 }
